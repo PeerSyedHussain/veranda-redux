@@ -1,6 +1,6 @@
 import { createStore } from 'redux'
-import courseReducer from './course/courseReducer'
+import categoryReducer from './category/categoryReducer'
 
-const store = createStore(courseReducer)
+const store = createStore(categoryReducer)
 
-export default store;
+export default store

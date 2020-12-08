@@ -1,8 +1,8 @@
-import { CLICK_CATEGORY_ALL } from './categoryTypes'
+import { CATEGORY_ALL } from './categoryType'
 
-export const categoryWise = () => {
+
+export const category_all = () => {
     return {
-        type : CLICK_CATEGORY_ALL
+        type : CATEGORY_ALL
     }
 }
-

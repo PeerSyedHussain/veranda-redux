@@ -1,4 +1,4 @@
-import { CATEGORY_ALL }from "./categoryType"
+// import { CLICK_CATEGORY_ALL } from './categoryTypes'
 
 const initialState = {
     category_list : [
@@ -55,15 +55,10 @@ const initialState = {
     ],
 }
 
+// const categoryReducer = (state = initialState,action) => {
+//     if(action.type){
 
-const categoryReducer = (state = initialState,action) => {
-    switch(action.type){
-        case CATEGORY_ALL : return {
-            // ...state,
+//     }
+// }
 
-        }
-        default : return state
-    }
-}
-
-export default categoryReducer
+// export default categoryReducer

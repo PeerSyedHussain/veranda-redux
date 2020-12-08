@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux'
-import { categoryWise } from './redux';
+import { categoryWise } from './redux-old';
+import { Button, Form } from 'react-bootstrap';
 
 function App(props) {
     return (
@@ -16,12 +17,12 @@ function App(props) {
                                   return (
                                       <>
                                           <li id={key}>
-                                              {/* <Form.Group controlId={item.id}>
+                                              <Form.Group controlId={item.id}>
                                                 <Form.Check id={item.id} type='checkbox' label={item.label}
                                                     checked={(item.value === true) ? true : false }
-                                                  onChange={this.categoryFilter}
+                                                //   onChange={this.categoryFilter}
                                                 />
-                                              </Form.Group> */}
+                                              </Form.Group>
                                           </li>
                                       </>
                                   );
