@@ -1,0 +1,1 @@
+export const CLICK_CATEGORY_ALL = 'CLICK_CATEGORY_ALL'
