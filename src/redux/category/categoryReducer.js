@@ -59,8 +59,8 @@ const initialState = {
 const categoryReducer = (state = initialState,action) => {
     switch(action.type){
         case CATEGORY_ALL : return {
-            // ...state,
-
+            ...state,
+            value : 'hi',
         }
         default : return state
     }

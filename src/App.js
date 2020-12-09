@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux'
-import { categoryWise } from './redux-old';
+import {category_all} from './redux'
 import { Button, Form } from 'react-bootstrap';
 
 function App(props) {
@@ -20,7 +20,7 @@ function App(props) {
                                               <Form.Group controlId={item.id}>
                                                 <Form.Check id={item.id} type='checkbox' label={item.label}
                                                     checked={(item.value === true) ? true : false }
-                                                //   onChange={this.categoryFilter}
+                                                  onChange={props.categoryFilter}
                                                 />
                                               </Form.Group>
                                           </li>
@@ -48,7 +48,7 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        categoryFilter : () => dispatch(categoryWise())
+        categoryFilter : () => dispatch(category_all())
     }
 }
 
